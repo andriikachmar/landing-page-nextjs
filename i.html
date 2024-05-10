@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="banner">
+          <h1>Next.js з нуля 2024 </h1>
+          <h3>Купуй курс за <span class="clr-purple">$19.00</span> і опануй Next.js для створення повнофункціональних
+            веб-сайтів
+          </h3>
+          <button class="accent">Придбати курс</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Чого Ви навчитеся </h2>
+        <ul class="unordered-list">
+          <li>Дізнаєтеся, як створювати SSR-сайти за допомогою Next.js 14</li>
+          <li>MongoDB, Mongoose</li>
+          <li>Дізнаєтеся про всі ключові можливості NextJS, такі як попередній рендеринг, SSR, вибірка даних,
+            маршрутизація на основі файлів та автентифікація</li>
+          <li>Оброблятимете надсилання даних за допомогою серверних дій</li>
+        </ul>
+      </div>
+    </section>
+    <section class="bg-gray">
+      <div class="container">
+        <h2>Зміст</h2>
+        <ul class="unordered-list">
+          <li>Модуль 1: Вступ до курсу</li>
+          <li>Модуль 2: Основи Next.js та початок проекту</li>
+          <li>Модуль 3: База даних, маршрути API та компоненти властивостей</li>
+          <li>Модуль 4: Next Auth, сесії та провайдер Google</li>
+          <li>Модуль 5: Створення властивостей та інтеграція з хмарними сервісами</li>
+        </ul>
+        <div class="btn-wrapper">
+          <button class="primary">Придбати курс</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Відгуки</h2>
+        <ul class="reviews-list">
+          <li>
+            <div>
+              <img src="/images/oval.jpg" alt="">
+            </div>
+            <div>
+              <p cl>Анна</p>
+              <p>Суперкласний курс! Рекомендую! </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="/images/oval-2.jpg" alt="">
+            </div>
+            <div>
+              <p>Сергій</p>
+              <p>Топ за свої гроші :) </p>
+            </div>
+          </li>
+        </ul>
+        <div class="companies">
+          <img src="/images/amazon.svg" alt="amazon">
+          <img src="/images/google.svg" alt="google">
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray">
+      <div class="container">
+        <h2>Часті запитання</h2>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Чи підходить мені цей
+                курс?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Якщо ваша мета - почати писати сайти на Next.js або отримати роботу розробника Next.js, то цей курс
+                ідеально підходить для вас.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Що, якщо я куплю курс, а
+                він мені не сподобається?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Ми повернемо гроші.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Коли був записаний цей
+                курс?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Курс актуальний на 10.01.2024</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Чи є знижки для
+                студентів?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Так, ми надаємо знижку для студентів 15%!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-wrapper">
+          <button class="primary">Придбати курс</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Автор</h2>
+
+        <div class="author-info">
+          <img src="./images/oval-3.png" alt="">
+          <p>Привіт! Мене звати Андрій. Я веб-розробник із багаторічним досвідом у створенні повнофункціональних
+            веб-сайтів. Моє захоплення технологіями та стале прагнення розвиватися спонукали мене поділитися своїм
+            знанням про Next.js через цей курс. Моя мета - зробити навчання цікавим та доступним для кожного, хто бажає
+            оволодіти цією потужною технологією. Приєднуйтесь до мене, і ми разом подорожуватимемо у світ Next.js,
+            надаючи вам необхідні навички для створення вражаючих веб-додатків!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const items = document.querySelectorAll(".accordion button")
+
+    function toggleAccordion() {
+      const itemToggle = this.getAttribute('aria-expanded')
+
+      for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false')
+      }
+
+      if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true')
+      }
+    }
+
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
+  </script>
+</body>
+
+</html>
